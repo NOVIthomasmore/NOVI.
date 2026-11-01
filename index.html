@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Welkom bij NOVI. Ontdek onze website.">
+  <title>NOVI.</title>
+  <style>
+    :root{--ink:#182437;--muted:#617086;--blue:#3459df;--pale:#f3f6ff;--line:#e1e7f2}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:#fff}a{color:inherit;text-decoration:none}
+    .shell{width:min(1100px,calc(100% - 40px));margin:auto}
+    header{border-bottom:1px solid var(--line);background:#fff}nav{min-height:80px;display:flex;align-items:center;justify-content:space-between;gap:20px} .logo{font-size:2rem;font-weight:900;letter-spacing:-.08em}nav .links{display:flex;gap:24px;font-weight:600;font-size:.95rem}.links a:hover{color:var(--blue)}
+    .hero{background:linear-gradient(135deg,#edf2ff 0%,#f9faff 55%,#e9f9f5 100%);padding:110px 0 120px;overflow:hidden}.eyebrow{display:inline-block;padding:9px 14px;border-radius:999px;background:#fff;color:var(--blue);font-size:.85rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line)}
+    h1{font-size:clamp(4.5rem,13vw,10rem);letter-spacing:-.09em;line-height:1;margin:25px 0 18px;font-weight:900}h1 span{color:var(--blue)}.intro{max-width:580px;color:var(--muted);font-size:clamp(1.15rem,2.4vw,1.5rem);line-height:1.65;margin-bottom:34px}
+    .button{display:inline-block;padding:16px 24px;border-radius:14px;background:var(--blue);color:#fff;font-weight:700;box-shadow:0 10px 25px #3459df2b}.button:hover{background:#2344bf}
+    section.content{padding:90px 0}h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.05em;margin:0 0 15px}.sub{color:var(--muted);font-size:1.1rem;line-height:1.7;max-width:680px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:36px}.tile{border:1px solid var(--line);border-radius:20px;padding:30px;background:#fff}.tile .number{font-size:.85rem;color:var(--blue);font-weight:800}.tile h3{font-size:1.3rem;margin:18px 0 10px}.tile p{color:var(--muted);line-height:1.6;margin:0}
+    .about{background:var(--pale);padding:88px 0}.about .shell{max-width:1100px}footer{padding:30px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}
+    @media(max-width:650px){nav{min-height:70px}.links{gap:12px!important;font-size:.83rem!important}.hero{padding:75px 0 90px}.grid{grid-template-columns:1fr}.content{padding:65px 0!important}.about{padding:65px 0}}
+  </style>
+</head>
+<body>
+  <header><nav class="shell" aria-label="Hoofdnavigatie"><a class="logo" href="#home" aria-label="NOVI homepage">NOVI.</a><div class="links"><a href="#ontdek">Ontdek</a><a href="#over">Over NOVI.</a></div></nav></header>
+  <main>
+    <section id="home" class="hero"><div class="shell"><span class="eyebrow">Welkom</span><h1>NOVI<span>.</span></h1><p class="intro">Een nieuwe plek, een frisse start. Welkom op de website van NOVI.</p><a class="button" href="#ontdek">Ontdek meer ↓</a></div></section>
+    <section class="content" id="ontdek"><div class="shell"><h2>Ontdek NOVI.</h2><p class="sub">Dit is het begin van onze website. Binnenkort vind je hier meer informatie over wat NOVI. te bieden heeft.</p><div class="grid"><article class="tile"><span class="number">01 /</span><h3>Welkom</h3><p>Leer NOVI. kennen en ontdek waar we voor staan.</p></article><article class="tile"><span class="number">02 /</span><h3>Onze ideeën</h3><p>Hier komt binnenkort meer informatie over onze plannen.</p></article><article class="tile"><span class="number">03 /</span><h3>Blijf ontdekken</h3><p>Deze website groeit mee met NOVI.</p></article></div></div></section>
+    <section class="about" id="over"><div class="shell"><h2>Over NOVI.</h2><p class="sub">We bouwen aan iets nieuws. Binnenkort vertellen we hier ons verhaal.</p></div></section>
+  </main>
+  <footer><div class="shell">© NOVI. — Met zorg gemaakt.</div></footer>
+</body>
+</html>
