@@ -94,13 +94,14 @@ body{background:#eaf2ff;color:#46362f}
  var shown=false;
  try{shown=sessionStorage.getItem('novi-newsletter-seen')==='1'}catch(e){}
  function dismiss(){backdrop.hidden=true;document.body.style.overflow='';if(prior&&typeof prior.focus==='function')prior.focus()}
- function show(){if(shown||!backdrop.hidden)return;prior=document.activeElement;backdrop.hidden=false;document.body.style.overflow='hidden';close.focus();try{sessionStorage.setItem('novi-newsletter-seen','1')}catch(e){}}
+ function show(force){if((shown&&!force)||!backdrop.hidden)return;prior=document.activeElement;backdrop.hidden=false;document.body.style.overflow='hidden';close.focus();try{sessionStorage.setItem('novi-newsletter-seen','1')}catch(e){}}
  close.addEventListener('click',dismiss);
  later.addEventListener('click',dismiss);
  ticket.addEventListener('click',dismiss);
  backdrop.addEventListener('click',function(e){if(e.target===backdrop)dismiss()});
  document.addEventListener('keydown',function(e){if(backdrop.hidden)return;if(e.key==='Escape')dismiss();if(e.key==='Tab'){var items=Array.from(backdrop.querySelectorAll('button,a[href]'));var first=items[0],last=items[items.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}});
- window.setTimeout(show,2200);
+ var preview=new URLSearchParams(window.location.search).get('popup')==='1';
+ if(preview){show(true)}else{window.setTimeout(function(){show(false)},2200)}
 })();
 </script>
 </body></html>
