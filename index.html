@@ -36,6 +36,23 @@ body{background:#eaf2ff;color:#46362f}
 @media(max-width:500px){.hero{min-height:650px}.hero-logo{width:210px}.nav-inner{min-height:72px}}
 /* NOVI original project imagery */
 .photo-wide{position:relative;overflow:hidden;min-height:420px;background:#c6d8ee}.photo-wide img,.photo-tile img,.visual-cover img,.app-image img,.plan-image img{display:block;width:100%;height:100%;object-fit:cover}.photo-wide img{position:absolute;inset:0}.photo-wide:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#2a1c1599,transparent 65%);pointer-events:none}.photo-label{position:absolute;z-index:1;bottom:27px;left:30px;color:#fff;font-family:Georgia,serif;font-size:clamp(1.4rem,3vw,2.4rem);text-shadow:0 2px 12px #0009}.photo-gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:35px}.photo-tile{background:#c6d8ee;min-height:260px;aspect-ratio:16/10;overflow:hidden;position:relative}.photo-tile span{position:absolute;bottom:12px;left:13px;background:#fffdf4e8;color:#48362f;padding:7px 11px;font-size:.77rem;font-weight:700}.gallery-section{background:#eef4ff}.app-image,.plan-image{overflow:hidden;background:#d5e5fb;border:1px solid #b6c5da;margin-top:30px}.app-image img,.plan-image img{height:auto;object-fit:contain}.image-note{font-size:.84rem;line-height:1.6;color:#6c625e}.img-fallback{display:none;padding:35px;text-align:center;color:#5a4a40}.photo-wide .img-fallback{padding:160px 20px}.photo-tile .img-fallback{padding:110px 15px}@media(max-width:650px){.photo-gallery{grid-template-columns:1fr}.photo-wide{min-height:300px}.photo-wide .img-fallback{padding:120px 15px}}
+
+/* Newsletter teaser: prototype, no personal data collected */
+.nl-backdrop[hidden]{display:none!important}.nl-backdrop{position:fixed;inset:0;z-index:9999;background:#201913bd;display:grid;place-items:center;padding:18px;animation:nlfade .25s ease}
+@keyframes nlfade{from{opacity:0}to{opacity:1}}
+.nl-modal{position:relative;display:grid;grid-template-columns:.75fr 1.25fr;width:min(790px,100%);max-height:min(92vh,780px);overflow:auto;background:#eef4ff;color:#49362f;border-radius:5px;box-shadow:0 22px 90px #0b1d3180}
+.nl-panel{background:#533d32;color:#dceafd;min-height:400px;padding:45px 25px;display:flex;flex-direction:column;justify-content:space-between;align-items:center;text-align:center}
+.nl-panel svg{width:100px;height:135px}.nl-panel .nl-tiny{font-size:.67rem;letter-spacing:.23em;text-transform:uppercase;line-height:1.8}
+.nl-content{padding:56px 48px 45px;display:flex;flex-direction:column;justify-content:center;gap:15px}
+.nl-content h2{font-family:"Playfair Display",Georgia,serif;font-weight:400;letter-spacing:-.045em;font-size:clamp(2.3rem,4vw,3.5rem);line-height:1.15;margin:0;color:#49362f}
+.nl-content p{font-size:.94rem;line-height:1.8;margin:0;color:#63574f}
+.nl-discount{font-size:1rem;letter-spacing:.2em;text-transform:uppercase;color:#694835;font-weight:700}
+.nl-status{padding:14px;background:#dae8f8;color:#48536a;border:1px solid #bacde7;font-weight:700;font-size:.87rem;line-height:1.6}
+.nl-note{font-size:.75rem!important}.nl-close{position:absolute;right:12px;top:10px;border:0;background:transparent;color:#49362f;font-size:1.8rem;cursor:pointer;padding:4px 12px;line-height:1}
+.nl-secondary{background:none;border:0;text-decoration:underline;text-underline-offset:4px;align-self:flex-start;color:#6b594e;padding:8px 0;cursor:pointer}
+.nl-link{background:#49362f;color:#fff;padding:14px 20px;text-align:center;font-weight:700;font-size:.88rem}
+.nl-link:hover{background:#725342}
+@media(max-width:620px){.nl-modal{grid-template-columns:1fr}.nl-panel{min-height:110px;padding:18px;flex-direction:row;justify-content:center;gap:23px}.nl-panel svg{width:54px;height:75px}.nl-content{padding:38px 25px 26px}.nl-close{top:4px;right:5px;color:#e6efff}.nl-content h2{font-size:2.4rem}}
 </style>
 </head>
 <body>
@@ -51,4 +68,39 @@ body{background:#eaf2ff;color:#46362f}
 <section class="section" id="praktisch"><div class="wrap faq"><div class="eyebrow">05 / Praktische info</div><h2 class="section-title serif">Good to know.</h2><details><summary>Wanneer vindt NOVI. plaats?</summary><p>NOVI. staat gepland voor juni 2027. De exacte datum volgt later.</p></details><details><summary>Waar gaat het event door?</summary><p>De locatie wordt later bekendgemaakt.</p></details><details><summary>Kan ik al tickets kopen?</summary><p>Nog niet. De ticketverkoop is niet geopend. Er worden momenteel geen betalingen verwerkt.</p></details><details><summary>Wat kan ik verwachten?</summary><p>Een fashion experience met aandacht voor persoonlijke styling, het ontdekken van nieuwe looks, body insights en verbinding.</p></details></div></section>
 </main>
 <footer class="footer"><div class="wrap"><div class="footer-flex"><div><div class="footer-brand"><svg class="novi-logo" viewBox="0 0 310 410" role="img" aria-label="NOVI." xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"><path d="M38 188V55C38 32 56 18 78 18S118 32 118 55V188H88V64C88 50 78 47 72 47S56 53 56 66V188Z"/><path d="M148 55C148 33 166 18 194 18S240 33 240 55V151C240 175 222 193 194 193S148 175 148 151Z"/><path d="M183 60V149C183 164 205 164 205 149V60C205 45 183 45 183 60Z"/><path d="M37 218H69L91 340L114 218H145L113 385H70Z"/><path d="M166 218H197V385H166Z"/><rect x="218" y="354" width="31" height="31" rx="4"/></g></svg></div><p class="serif" style="font-size:1.55rem;margin:12px 0">Where style fits people.</p></div><div><div class="eyebrow muted">Ontdek</div><p><a href="#concept">Het concept</a> &nbsp;·&nbsp; <a href="#experience">Experience</a> &nbsp;·&nbsp; <a href="#tickets">Tickets</a></p><p class="muted">Juni 2027 · Meer informatie volgt</p></div></div><div class="footer-bottom">© NOVI. · Conceptwebsite. Eventdetails onder voorbehoud.</div></div></footer>
+
+<div class="nl-backdrop" id="nlBackdrop" hidden>
+ <section class="nl-modal" role="dialog" aria-modal="true" aria-labelledby="nlTitle" aria-describedby="nlDescription">
+  <button class="nl-close" id="nlClose" type="button" aria-label="Sluit nieuwsbriefvenster">×</button>
+  <div class="nl-panel"><svg viewBox="0 0 310 410" aria-label="NOVI." role="img"><g fill="none" stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"><path d="M38 188V55C38 32 56 18 78 18S118 32 118 55V188H88V64C88 50 78 47 72 47S56 53 56 66V188Z"/><path d="M148 55C148 33 166 18 194 18S240 33 240 55V151C240 175 222 193 194 193S148 175 148 151Z"/><path d="M183 60V149C183 164 205 164 205 149V60C205 45 183 45 183 60Z"/><path d="M37 218H69L91 340L114 218H145L113 385H70Z"/><path d="M166 218H197V385H166Z"/><rect x="218" y="354" width="31" height="31" rx="4"/></g></svg><span class="nl-tiny">Where style<br>fits people.</span></div>
+  <div class="nl-content">
+   <span class="nl-discount">10% ticketvoordeel</span>
+   <h2 id="nlTitle">A little something for you.</h2>
+   <p id="nlDescription">Schrijf je binnenkort in voor de NOVI.-nieuwsbrief en ontdek als eerste het event van juni 2027. We werken aan een speciale actie met <strong>10% korting op tickets</strong>.</p>
+   <div class="nl-status">Nieuwsbriefinschrijving binnenkort beschikbaar.</div>
+   <p class="nl-note">Dit is een voorbeeld van de geplande actie. De korting en voorwaarden zijn nog niet definitief. We verzamelen via dit venster nog geen e-mailadressen.</p>
+   <a class="nl-link" href="#tickets" id="nlTicketLink">Bekijk de tickets</a>
+   <button class="nl-secondary" type="button" id="nlLater">Misschien later</button>
+  </div>
+ </section>
+</div>
+<script>
+(function(){
+ var backdrop=document.getElementById('nlBackdrop');
+ var close=document.getElementById('nlClose');
+ var later=document.getElementById('nlLater');
+ var ticket=document.getElementById('nlTicketLink');
+ var prior=null;
+ var shown=false;
+ try{shown=sessionStorage.getItem('novi-newsletter-seen')==='1'}catch(e){}
+ function dismiss(){backdrop.hidden=true;document.body.style.overflow='';if(prior&&typeof prior.focus==='function')prior.focus()}
+ function show(){if(shown||!backdrop.hidden)return;prior=document.activeElement;backdrop.hidden=false;document.body.style.overflow='hidden';close.focus();try{sessionStorage.setItem('novi-newsletter-seen','1')}catch(e){}}
+ close.addEventListener('click',dismiss);
+ later.addEventListener('click',dismiss);
+ ticket.addEventListener('click',dismiss);
+ backdrop.addEventListener('click',function(e){if(e.target===backdrop)dismiss()});
+ document.addEventListener('keydown',function(e){if(backdrop.hidden)return;if(e.key==='Escape')dismiss();if(e.key==='Tab'){var items=Array.from(backdrop.querySelectorAll('button,a[href]'));var first=items[0],last=items[items.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}});
+ window.setTimeout(show,2200);
+})();
+</script>
 </body></html>
